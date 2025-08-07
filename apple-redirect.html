@@ -7,10 +7,11 @@
       const hash = window.location.hash.substr(1);
       const queryParams = new URLSearchParams(hash);
       const queryString = queryParams.toString();
-      window.location.href = `preplink://callback?${queryString}`;
+      window.location.href = `preplink://callback#${queryString}`;
     </script>
   </head>
   <body>
     <p>Redirecting back to the app...</p>
   </body>
+
 </html>
